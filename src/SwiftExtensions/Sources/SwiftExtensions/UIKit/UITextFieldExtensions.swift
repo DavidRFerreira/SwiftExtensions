@@ -27,8 +27,8 @@ public extension UITextField {
     }
       
     
-    /// Returns number of line of the current word. 
-    func getCurrentLineNumber() -> Int {
+    /// Returns position of cursor in terms of the number of line.
+    func getCursorLineNumberPosition() -> Int {
         if let selectedRange = self.selectedTextRange {
             
             let numberLines = getTotalNumberLines()
@@ -47,7 +47,7 @@ public extension UITextField {
             
             let currentLine = Int(cursorPosition / numberWordsPerLine)
             
-            // Check for blank lines and count them two.
+            // Check for blank lines and count them too.
             let stringBehindCurrentWord = self.text.prefix(cursorPosition)
             let blankLines = stringBehindCurrentWord.components(separatedBy: "\n")
             let numberBlankLines = (blankLines.count - 1) / 2
@@ -59,6 +59,27 @@ public extension UITextField {
     }
 
     
+    /// Returns position of cursor in terms of the number of characters in UITextField.
+    func getCursorPosition() -> NSInteger? {
+        if let selectedRange : UITextRange = self.selectedTextRange? {
+            let textPosition : UITextPosition = selectedRange.start
+            return self.offset(from: self.beginningOfDocument, to: textPosition)
+        }
+        return nil
+    }
+
+    
+    /// Returns word currently being written.
+    /// The returned word will be the set of characters since last newline or blankspace.
+    func getCurrentWord() -> String? {
+        let cursorOffset : NSInteger = self.getCursorPosition()
+        let text : NSString = self.text as NSString
+        let substring : NSString = text.substring(to: cursorOffset) as NSString
+        var lastWord = substring.components(separatedBy: " ").last
+        lastWord = lastWord?.components(separatedBy: "\n").last
+        return lastWord
+    }
+
 }
 
 
