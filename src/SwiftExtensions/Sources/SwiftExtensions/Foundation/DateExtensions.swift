@@ -12,7 +12,7 @@ import Foundation
 
 extension Date {
     
-    // Converts to string with specified format. 
+    /// Converts to string with specified format.
     func convertToStringWithFormat(dateFormat: String) -> String {
         let formatter = DateFormatter()
         formatter.locale = NSLocale.current
