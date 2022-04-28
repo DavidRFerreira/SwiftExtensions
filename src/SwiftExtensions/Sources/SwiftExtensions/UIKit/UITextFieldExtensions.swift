@@ -11,9 +11,6 @@
 import UIKit
 
 
-
-// MARK: - Methods
-
 public extension UITextField {
     
     /// Returns number of lines in UITextField.
