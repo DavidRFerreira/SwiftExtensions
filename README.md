@@ -2,10 +2,6 @@
 
 This repository contains a collection of Swift methods and extension that can be helpful in the context of an iOS project. More than that, it is a personal collection of methods that I found useful in different situations and past experiences.  
 
-<br>
-<br>
-<br>
-
 ## Table of Contents
 1. [Foundation](#Foundation)
     1. [Date](#Date)
