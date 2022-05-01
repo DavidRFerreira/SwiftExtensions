@@ -2,12 +2,30 @@
 
 This repository contains a collection of Swift methods and extension that can be helpful in the context of an iOS project. More than that, it is a personal collection of methods that I found useful in different situations and past experiences.  
 
+<br>
+<br>
+<br>
+
+## Table of Contents
+1. [Foundation](#Foundation)
+    1. [Date](#Date)
+    2. [Encodable](#Encodable)
+2. [UIKit](#UIKit)
+    1. [UITableView](#UITableView)
+    2. [UITextField](#UITextField)
+
 
 <br>
 <br>
 <br>
+
+
+
+<a name="Foundation"></a>
 
 ## Foundation
+
+<a name="Date"></a>
 
 ### Date Extensions
 
@@ -16,7 +34,9 @@ This repository contains a collection of Swift methods and extension that can be
 | convertToStringWithFormat | Converts a Date to a string given a passed date format. |
 
 
-### Encodable Extension
+<a name="Encodable"></a>
+
+### Encodable Extensions
 
 | Method  | Description |
 | ------------- | ------------- |
@@ -30,7 +50,13 @@ This repository contains a collection of Swift methods and extension that can be
 <br>
 <br>
 
+
+<a name="UIKit"></a>
+
 ## UIKit
+
+
+<a name="UITableView"></a>
 
 ### UITableView Extensions
 
@@ -39,6 +65,8 @@ This repository contains a collection of Swift methods and extension that can be
 | reloadDataWithoutScroll | Reloads TableView while also maintaining current position. |
 
 
+
+<a name="UITextField"></a>
 
 ### UITextField Extensions
 
