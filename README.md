@@ -1,6 +1,6 @@
 # SwiftExtensions
 
-This repository contains a collection of Swift methods and extension that can be helpful in the context of an iOS/MacOS project. More than that, it is a personal collection of methods that I found useful in different situations across past experiences.  
+This repository contains a collection of Swift methods and extensions that can be helpful in the context of an iOS/MacOS project. More than that, it is a personal collection of methods that I found useful in different situations across past experiences.  
 
 ## Table of Contents
 1. [Foundation](#Foundation)
