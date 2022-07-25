@@ -10,13 +10,6 @@ This repository contains a collection of Swift methods and extensions that can b
     1. [UITableView](#UITableView)
     2. [UITextField](#UITextField)
 
-
-<br>
-<br>
-<br>
-
-
-
 <a name="Foundation"></a>
 
 ## Foundation
@@ -37,15 +30,6 @@ This repository contains a collection of Swift methods and extensions that can b
 | Method  | Description |
 | ------------- | ------------- |
 | asDictionary | Converts any encodable data structure into a dictionary. |
-
-
-
-
-
-<br>
-<br>
-<br>
-
 
 <a name="UIKit"></a>
 
