@@ -20,7 +20,7 @@ This repository contains a collection of Swift methods and extensions that can b
 
 | Method  | Description |
 | ------------- | ------------- |
-| convertToStringWithFormat | Converts a Date to a string given a passed date format. |
+| convertToStringWithFormat | Converts a Date to a string given a date format. |
 
 
 <a name="Encodable"></a>
